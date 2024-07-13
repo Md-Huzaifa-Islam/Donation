@@ -179,6 +179,54 @@ hr{
 
 
 
+
+
+/*   news   */
+
+.news{
+    margin-top: 110px;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.news h3{
+    text-align: left;
+}
+
+.news p{
+    text-align: left;
+    margin: 20px 10px 30px 0px;
+}
+
+.news>div{
+    display: grid;
+    grid-template-columns: 3fr 2.5fr;
+    gap: 50px;
+    align-items: center;
+}
+
+#new1{
+    display: grid;
+    grid-template-columns: 2.5fr 3fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.news img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:576px) {
     header{
         padding: 50px 10px;
@@ -208,7 +256,6 @@ hr{
         gap: 50px;
     }
 
-
     #plan{
         margin: 50px 20px 0px;
     }
@@ -224,6 +271,24 @@ hr{
 
     .card p,.cardtext{
         text-align: center;
+    }
+
+    .news{
+        padding: 0px 20px;
+        margin-top: 100px;
+        gap: 50px;
+    }
+
+    .news>div{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    #new1{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
 }
