@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+/* shared styles */
+
+p{
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.sectionheader{
+    color: rgb(18, 18, 18);
+    font-family: Inter;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+    text-align: center;
+}
+
+.primarybtn{
+    border-radius: 5px;
+    background: rgb(255, 89, 89);
+    padding: 16px 12px 16px 12px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    border: none;
+}
+
+section{
+    margin: auto;
+}
+
+
+/* head section */
+
+header{
+    background-image:linear-gradient(0.00deg, rgb(18, 18, 18),rgba(18, 18, 18, 0) 100%) , url('../images/donation1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 175px 300px;
+}
+
+header div{
+    text-align: center;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5rem;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+header p{
+    color: rgb(255, 255, 255);
+    margin: 20px 70px 30px;
+}
+
+
+
+/* amount */
+
+#amount{
+    max-width: 800px;
+    margin-top: 130px;
+    text-align: center;
+}
+
+#amount>p{
+    margin: 20px 40px 100px;
+}
+
+#amount div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 22px;
+}
+
+.other{
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin: 100px auto 10px;
+}
+
+.taka{
+    color: rgb(112, 112, 112);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#amount button{
+    margin-top: 30px;
+}
+
+hr{
+    border: 1px solid rgb(218, 218, 218);
+}
+
+
+
+
+/*  plan  */
+
+#plan{
+    margin-top: 130px;
+    text-align: center;
+    max-width: 1100px;
+}
+
+#plan>p{
+    margin: 20px auto 50px;
+    max-width: 700px;
+}
+
+#plan>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+.card{
+    padding: 54px 22px;
+    text-align: left;
+}
+
+.cardtext{
+    color: rgb(18, 18, 18);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    margin: 30px 0px 16px;
+}
+
+.card>p{
+    text-align: left;
+}
+
+#card1{
+    border-radius: 5px;
+    background: rgba(79, 157, 166, 0.1);
+}
+
+#card2{
+    border-radius: 5px;
+    background: rgba(255, 89, 89, 0.1);
+}
+
+#card3{
+    border-radius: 5px;
+    background: rgba(255,244,214,255);
+}
+
+
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 50px 10px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        font-weight: 650;
+        line-height: 3.5rem;
+    }
+    header p {
+        margin: 20px 30px 30px;
+    }
+    #amount>p {
+        margin: 20px 40px 50px;
+    }
+    
+    .other{
+        margin-top: 50px;
+    }
+    #amount {
+        margin: 80px 20px 0px;
+    }
+
+
+    #plan{
+        margin: 50px 20px 0px;
+    }
+    #plan>div {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .card{
+        padding: 54px 30px;
+        text-align: center;
+    }
+
+    .card p,.cardtext{
+        text-align: center;
+    }
+
+}
