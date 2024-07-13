@@ -203,6 +203,11 @@ hr{
         margin: 80px 20px 0px;
     }
 
+    #amount div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
 
     #plan{
         margin: 50px 20px 0px;
