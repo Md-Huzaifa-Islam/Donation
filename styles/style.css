@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lobster&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     padding: 0%;
@@ -196,7 +195,7 @@ hr{
 }
 
 .news p{
-    text-align: left;
+    text-align: justify;
     margin: 20px 10px 30px 0px;
 }
 
@@ -221,6 +220,90 @@ hr{
 
 
 
+
+/*   update    */
+
+.update{
+    max-width: 800px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.update p{
+    margin: 20px 60px 50px;
+}
+
+.update >div{
+    background: rgb(255, 244, 214);
+    padding: 75px 20px;
+    margin: auto;
+}
+
+.email{
+    max-width: 430px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+
+input[type="email"]{
+    background-color: rgb(217, 217, 217);
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 14px 17px;
+}
+
+input[type="email"]::placeholder{
+    color: rgb(170, 159, 159);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.email button{
+    border-radius: 0px 5px 5px 0px;
+    background: rgb(255, 89, 89);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+
+
+
+/* footer section   */
+
+
+footer{
+    background-color:rgb(11, 13, 23);
+    padding: 40px 0px;
+    margin-top: 130px;
+}
+
+footer div{
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+footer h3{
+    color: rgb(255, 89, 89);
+    font-family: Lobster;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+footer p{
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 
 
@@ -257,7 +340,7 @@ hr{
     }
 
     #plan{
-        margin: 50px 20px 0px;
+        margin: 80px 20px 0px;
     }
     #plan>div {
         grid-template-columns: 1fr;
@@ -276,7 +359,7 @@ hr{
     .news{
         padding: 0px 20px;
         margin-top: 100px;
-        gap: 50px;
+        gap: 80px;
     }
 
     .news>div{
@@ -289,6 +372,16 @@ hr{
         display: flex;
         flex-direction: column;
         gap: 30px;
+    }
+    .update{
+        margin-top: 80px;
+    }
+    .update p{
+        margin: 20px 40px 30px;
+    }
+
+    footer{
+        margin-top: 80px;
     }
 
 }
